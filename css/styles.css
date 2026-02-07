@@ -1,0 +1,166 @@
+:root {
+  --primary-color: #2e2f42;
+  --secondary-color: #434455;
+  --white-color: #ffffff;
+  --logo-span-color: #4d5ae5;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.logo {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+}
+
+.logo-span {
+  color: var(--logo-span-color);
+}
+
+.nav-list {
+  font-weight: 500;
+  list-style: none;
+  color: var(--primary-color);
+}
+
+.nav-link {
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: blue;
+}
+
+.address {
+  color: var(--secondary-color);
+}
+.address-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: blue;
+}
+
+.hero {
+  background-color: var(--primary-color);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1;
+  color: var(--white-color);
+}
+
+.hero-btn {
+  cursor: pointer;
+  background-color: var(--logo-span-color);
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.advantages {
+  list-style: none;
+}
+
+.advantages-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+
+.advantages-text {
+  color: var(--secondary-color);
+}
+
+.work-list {
+  list-style: none;
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--primary-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  color: var(--primary-color);
+}
+
+.team-list {
+  list-style: none;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+
+.team-text {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.footer {
+  background-color: var(--primary-color);
+}
+.footer-logo {
+  color: var(--logo-span-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+}
+
+.footer-span {
+  color: #f4f4fd;
+}
+.footer-text {
+  color: #e7e9fc;
+}
+
+.app {
+  list-style: none;
+}
+
+.app-btn {
+  font-weight: 500;
+  color: var(--logo-span-color);
+  background-color: #e7e9fc;
+  cursor: pointer;
+}
+
+.app-btn:hover,
+.app-btn:focus {
+  color: var(--white-color);
+  background-color: #404bbf;
+}
+
+.examples {
+  list-style: none;
+}
+
+.examples-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.examples-text {
+  color: var(--secondary-color);
+}
