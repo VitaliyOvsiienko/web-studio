@@ -1,9 +1,16 @@
+/* Variables */
+
 :root {
   --primary-color: #2e2f42;
   --secondary-color: #434455;
   --white-color: #ffffff;
   --logo-span-color: #4d5ae5;
+  --light-bg-color: #f4f4fd;
+  --footer-text-color: #e7e9fc;
+  --accent-hover-color: #404bbf;
 }
+
+/* Body */
 
 body {
   font-family: Roboto, sans-serif;
@@ -11,6 +18,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+
+/* Logo */
 
 .logo {
   color: var(--primary-color);
@@ -23,6 +32,8 @@ body {
   color: var(--logo-span-color);
 }
 
+/* Navigations */
+
 .nav-list {
   font-weight: 500;
   list-style: none;
@@ -34,8 +45,10 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: blue;
+  color: var(--accent-hover-color);
 }
+
+/* Address */
 
 .address {
   color: var(--secondary-color);
@@ -47,8 +60,10 @@ body {
 
 .address-link:hover,
 .address-link:focus {
-  color: blue;
+  color: var(--accent-hover-color);
 }
+
+/* Hero */
 
 .hero {
   background-color: var(--primary-color);
@@ -68,6 +83,8 @@ body {
   font-weight: 500;
 }
 
+/* Advantages */
+
 .advantages {
   list-style: none;
 }
@@ -83,6 +100,8 @@ body {
   color: var(--secondary-color);
 }
 
+/* Works */
+
 .work-list {
   list-style: none;
 }
@@ -93,6 +112,8 @@ body {
   line-height: 1.1;
   color: var(--primary-color);
 }
+
+/* Team */
 
 .team-title {
   font-weight: 700;
@@ -113,9 +134,10 @@ body {
 }
 
 .team-text {
-  font-size: 16px;
   color: var(--secondary-color);
 }
+
+/* Footer */
 
 .footer {
   background-color: var(--primary-color);
@@ -128,11 +150,15 @@ body {
 }
 
 .footer-span {
-  color: #f4f4fd;
+  color: var(--light-bg-color);
 }
 .footer-text {
-  color: #e7e9fc;
+  color: var(--footer-text-color);
 }
+
+/* Portfolio */
+
+/* App */
 
 .app {
   list-style: none;
@@ -141,15 +167,17 @@ body {
 .app-btn {
   font-weight: 500;
   color: var(--logo-span-color);
-  background-color: #e7e9fc;
+  background-color: var(--footer-text-color);
   cursor: pointer;
 }
 
 .app-btn:hover,
 .app-btn:focus {
   color: var(--white-color);
-  background-color: #404bbf;
+  background-color: var(--accent-hover-color);
 }
+
+/* Examples */
 
 .examples {
   list-style: none;
