@@ -12,11 +12,57 @@
 
 /* Body */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container */
+
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  border-bottom: 1px solid var(--footer-text-color);
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Logo */
@@ -35,9 +81,11 @@ body {
 /* Navigations */
 
 .nav-list {
+  display: flex;
   font-weight: 500;
   list-style: none;
   color: var(--primary-color);
+  gap: 40px;
 }
 
 .nav-link {
@@ -51,6 +99,9 @@ body {
 /* Address */
 
 .address {
+  display: flex;
+  gap: 20px;
+  font-style: normal;
   color: var(--secondary-color);
 }
 .address-link {
@@ -66,10 +117,12 @@ body {
 /* Hero */
 
 .hero {
+  text-align: center;
   background-color: var(--primary-color);
 }
 
 .hero-title {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1;
@@ -77,6 +130,9 @@ body {
 }
 
 .hero-btn {
+  min-width: 150px;
+  min-height: 50px;
+  padding: 15px;
   cursor: pointer;
   background-color: var(--logo-span-color);
   color: var(--white-color);
@@ -85,8 +141,16 @@ body {
 
 /* Advantages */
 
+.advantages-header {
+  display: none;
+}
+
 .advantages {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  gap: 20px;
 }
 
 .advantages-title {
@@ -100,13 +164,23 @@ body {
   color: var(--secondary-color);
 }
 
+.advantages-list {
+  width: calc((100% - 60px) / 4);
+}
+
 /* Works */
 
 .work-list {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .work-title {
+  margin-bottom: 20px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -116,6 +190,8 @@ body {
 /* Team */
 
 .team-title {
+  text-align: center;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -123,10 +199,16 @@ body {
 }
 
 .team-list {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .team-name {
+  text-align: center;
+  margin-top: 10px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -134,7 +216,13 @@ body {
 }
 
 .team-text {
+  text-align: center;
+  margin-top: 10px;
   color: var(--secondary-color);
+}
+
+.section-team {
+  background-color: var(--light-bg-color);
 }
 
 /* Footer */
@@ -154,6 +242,7 @@ body {
 }
 .footer-text {
   color: var(--footer-text-color);
+  margin-top: 10px;
 }
 
 /* Portfolio */
@@ -162,6 +251,16 @@ body {
 
 .app {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+.app-title {
+  display: none;
 }
 
 .app-btn {
@@ -169,6 +268,10 @@ body {
   color: var(--logo-span-color);
   background-color: var(--footer-text-color);
   cursor: pointer;
+  min-width: 69px;
+  min-height: 48px;
+  padding: 10px;
+  border: none;
 }
 
 .app-btn:hover,
@@ -181,14 +284,30 @@ body {
 
 .examples {
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+.examples-item {
+  flex-basis: calc((100% - 2 * 20px) / 3);
+
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 
 .examples-title {
   font-weight: 500;
   font-size: 20px;
   color: var(--primary-color);
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .examples-text {
   color: var(--secondary-color);
+  margin-bottom: 20px;
 }

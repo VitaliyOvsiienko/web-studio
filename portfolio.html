@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Raleway:wght@800&display=swap"
         rel="stylesheet" />
@@ -15,132 +18,146 @@
 
 <body>
 
-    <header>
-        <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
 
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Studio</a></li>
-                <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
-            </ul>
-        </nav>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Studio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+                    </ul>
+                </nav>
 
-        <address class="address">
-            <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="address-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
-        </address>
-
-
-
+                <address class="address">
+                    <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="address-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+                </address>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h1>
-            Application
-        </h1>
 
-        <ul class="app">
-            <li><button class="app-btn" type="button">All</button></li>
-            <li><button class="app-btn" type="button">Web Site</button></li>
-            <li><button class="app-btn" type="button">App</button></li>
-            <li><button class="app-btn" type="button">Design</button></li>
-            <li><button class="app-btn" type="button">Marketing</button></li>
-        </ul>
+        <section class="section">
 
-        <ul class="examples">
-            <li>
-                <img src="./images/works/img-1.jpg" alt="Bnking App" width="360" height="300">
-                <h2 class="examples-title">
-                    Banking App Interface Concept
-                </h2>
-                <p class="examples-text">
-                    App
-                </p>
-            </li>
-            <li>
-                <img src="./images/works/img-2.jpg" alt="QR Code" width="360" height="300">
-                <h2 class="examples-title">
-                    Cashless Payment
-                </h2>
-                <p class="examples-text">
-                    Marketing
-                </p>
-            </li>
-            <li>
-                <img src="./images/works/img-3.jpg" alt="Laptop" width="360" height="300">
-                <h2 class="examples-title">
-                    Meditation App
-                </h2>
-                <p class="examples-text">
-                    App
-                </p>
-            </li>
-            <li>
-                <img src="./images/works/img-4.jpg" alt="Taxi" width="360" height="300">
-                <h2 class="examples-title">
-                    Taxi Service
-                </h2>
-                <p class="examples-text">
-                    Marketing
-                </p>
-            </li>
-            <li>
-                <img src="./images/works/img-5.jpg" alt="Mobile wallpapers" width="360" height="300">
-                <h2 class="examples-title">
-                    Screen Illustrations
-                </h2>
-                <p class="examples-text">
-                    Design
-                </p>
-            </li>
-            <li>
-                <img src="./images/works/img-6.jpg" alt="Woman" width="360" height="300">
-                <h2 class="examples-title">
-                    Online Courses
-                </h2>
-                <p class="examples-text">
-                    Marketing
-                </p>
-            </li>
-            <li>
-                <img src="./images/works/img-7.jpg" alt="Instagram account" width="360" height="300">
-                <h2 class="examples-title">
-                    Instagram Stories Concept
-                </h2>
-                <p class="examples-text">
-                    Design
-                </p>
-            </li>
-            <li>
-                <img src="./images/works/img-8.jpg" alt="Organic Food" width="360" height="300">
-                <h2 class="examples-title">
-                    Organic Food
-                </h2>
-                <p class="examples-text">
-                    Web Site
-                </p>
-            </li>
-            <li>
-                <img src="./images/works/img-9.jpg" alt="Cup coffee" width="360" height="300">
-                <h2 class="examples-title">
-                    Fresh Coffee
-                </h2>
-                <p class="examples-text">
-                    Web Site
-                </p>
-            </li>
 
-        </ul>
+            <div class="container">
+                <h1 class="app-title">
+                    Application
+                </h1>
+                <ul class="app">
+                    <li class="app-item"><button class="app-btn" type="button">All</button></li>
+                    <li class="app-item"><button class="app-btn" type="button">Web Site</button></li>
+                    <li class="app-item"><button class="app-btn" type="button">App</button></li>
+                    <li class="app-item"><button class="app-btn" type="button">Design</button></li>
+                    <li class="app-item"><button class="app-btn" type="button">Marketing</button></li>
+                </ul>
+
+                <ul class="examples">
+                    <li class="examples-item">
+                        <img src="./images/works/img-1.jpg" alt="Bnking App" width="360" height="300">
+                        <h2 class="examples-title">
+                            Banking App Interface Concept
+                        </h2>
+                        <p class="examples-text">
+                            App
+                        </p>
+                    </li>
+                    <li class="examples-item">
+                        <img src="./images/works/img-2.jpg" alt="QR Code" width="360" height="300">
+                        <h2 class="examples-title">
+                            Cashless Payment
+                        </h2>
+                        <p class="examples-text">
+                            Marketing
+                        </p>
+                    </li>
+                    <li class="examples-item">
+                        <img src="./images/works/img-3.jpg" alt="Laptop" width="360" height="300">
+                        <h2 class="examples-title">
+                            Meditation App
+                        </h2>
+                        <p class="examples-text">
+                            App
+                        </p>
+                    </li>
+                    <li class="examples-item">
+                        <img src="./images/works/img-4.jpg" alt="Taxi" width="360" height="300">
+                        <h2 class="examples-title">
+                            Taxi Service
+                        </h2>
+                        <p class="examples-text">
+                            Marketing
+                        </p>
+                    </li>
+                    <li class="examples-item">
+                        <img src="./images/works/img-5.jpg" alt="Mobile wallpapers" width="360" height="300">
+                        <h2 class="examples-title">
+                            Screen Illustrations
+                        </h2>
+                        <p class="examples-text">
+                            Design
+                        </p>
+                    </li>
+                    <li class="examples-item">
+                        <img src="./images/works/img-6.jpg" alt="Woman" width="360" height="300">
+                        <h2 class="examples-title">
+                            Online Courses
+                        </h2>
+                        <p class="examples-text">
+                            Marketing
+                        </p>
+                    </li>
+                    <li class="examples-item">
+                        <img src="./images/works/img-7.jpg" alt="Instagram account" width="360" height="300">
+                        <h2 class="examples-title">
+                            Instagram Stories Concept
+                        </h2>
+                        <p class="examples-text">
+                            Design
+                        </p>
+                    </li>
+                    <li class="examples-item">
+                        <img src="./images/works/img-8.jpg" alt="Organic Food" width="360" height="300">
+                        <h2 class="examples-title">
+                            Organic Food
+                        </h2>
+                        <p class="examples-text">
+                            Web Site
+                        </p>
+                    </li>
+                    <li class="examples-item">
+                        <img src="./images/works/img-9.jpg" alt="Cup coffee" width="360" height="300">
+                        <h2 class="examples-title">
+                            Fresh Coffee
+                        </h2>
+                        <p class="examples-text">
+                            Web Site
+                        </p>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+
 
 
     </main>
 
     <footer class="footer">
 
-        <a class="footer-logo" href="./index.html"><span class="footer-span">Web</span>Studio</a>
-        <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
-            growth solutions.</p>
+        <div class="container">
+            <a class="footer-logo" href="./index.html"><span class="footer-span">Web</span>Studio</a>
+            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
+                growth solutions.</p>
+        </div>
+
+
 
     </footer>
 
