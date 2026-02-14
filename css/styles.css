@@ -1,13 +1,15 @@
 /* Variables */
 
 :root {
-  --primary-color: #2e2f42;
-  --secondary-color: #434455;
-  --white-color: #ffffff;
-  --logo-span-color: #4d5ae5;
-  --light-bg-color: #f4f4fd;
-  --footer-text-color: #e7e9fc;
-  --accent-hover-color: #404bbf;
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --Success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --white-background: #ffffff;
 }
 
 /* Body */
@@ -44,7 +46,7 @@ img {
 /* Container */
 
 .section {
-  padding: 80px 0;
+  padding: 120px 0;
 }
 
 .container {
@@ -55,7 +57,7 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid var(--footer-text-color);
+  border-bottom: 1px solid var(--accent);
   padding: 20px 0;
 }
 
@@ -68,14 +70,14 @@ img {
 /* Logo */
 
 .logo {
-  color: var(--primary-color);
+  color: var(--dark);
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 800;
 }
 
 .logo-span {
-  color: var(--logo-span-color);
+  color: var(--primary-brand);
 }
 
 /* Navigations */
@@ -84,7 +86,7 @@ img {
   display: flex;
   font-weight: 500;
   list-style: none;
-  color: var(--primary-color);
+  color: var(--dark);
   gap: 40px;
 }
 
@@ -93,50 +95,63 @@ img {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--accent-hover-color);
+  color: var(--pressed-state);
 }
 
 /* Address */
 
 .address {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   font-style: normal;
-  color: var(--secondary-color);
+  color: var(--text);
 }
 .address-link {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--text);
 }
 
 .address-link:hover,
 .address-link:focus {
-  color: var(--accent-hover-color);
+  color: var(--pressed-state);
 }
 
 /* Hero */
 
 .hero {
   text-align: center;
-  background-color: var(--primary-color);
+  background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background/people-office-bcg.jpg);
+  width: 1440px;
+  height: 600px;
+  background-color: var(--dark);
 }
 
 .hero-title {
-  margin-bottom: 20px;
+  margin-top: 188px;
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1;
-  color: var(--white-color);
+  color: var(--white-background);
 }
 
 .hero-btn {
   min-width: 150px;
   min-height: 50px;
-  padding: 15px;
+  padding: 16px 32px;
   cursor: pointer;
-  background-color: var(--logo-span-color);
-  color: var(--white-color);
+  background-color: var(--primary-brand);
+  color: var(--white-background);
   font-weight: 500;
+  border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--white-background);
+  background-color: var(--pressed-state);
 }
 
 /* Advantages */
@@ -157,15 +172,29 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--primary-color);
-}
-
-.advantages-text {
-  color: var(--secondary-color);
+  color: var(--dark);
 }
 
 .advantages-list {
   width: calc((100% - 60px) / 4);
+}
+
+.advantages-text {
+  color: var(--text);
+}
+
+.advantages-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  background-color: var(--light);
+  margin-bottom: 8px;
+}
+
+.advantages-icon {
+  width: 64px;
+  height: 64px;
 }
 
 /* Works */
@@ -184,7 +213,7 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
-  color: var(--primary-color);
+  color: var(--dark);
 }
 
 /* Team */
@@ -195,7 +224,7 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
-  color: var(--primary-color);
+  color: var(--dark);
 }
 
 .team-list {
@@ -212,36 +241,96 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--primary-color);
+  color: var(--dark);
 }
 
 .team-text {
   text-align: center;
   margin-top: 10px;
-  color: var(--secondary-color);
+  color: var(--text);
+  margin-bottom: 8px;
 }
 
 .section-team {
-  background-color: var(--light-bg-color);
+  background-color: var(--light);
+}
+
+.team-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-brand);
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--Success);
+}
+
+.team-icon {
+  fill: var(--light);
+  height: 16px;
+  width: 16px;
+}
+
+/* Customers */
+
+.customers-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 72px;
+}
+.div-cust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.customers-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  padding: 16, 32;
+  border: 1px solid tomato;
+}
+
+.customers-icon {
+  width: 104px;
+  height: 56px;
 }
 
 /* Footer */
 
 .footer {
-  background-color: var(--primary-color);
+  background-color: var(--dark);
 }
 .footer-logo {
-  color: var(--logo-span-color);
+  color: var(--primary-brand);
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 800;
 }
 
 .footer-span {
-  color: var(--light-bg-color);
+  color: var(--light);
 }
 .footer-text {
-  color: var(--footer-text-color);
+  color: var(--accent);
   margin-top: 10px;
 }
 
@@ -265,8 +354,8 @@ img {
 
 .app-btn {
   font-weight: 500;
-  color: var(--logo-span-color);
-  background-color: var(--footer-text-color);
+  color: var(--primary-brand);
+  background-color: var(--accent);
   cursor: pointer;
   min-width: 69px;
   min-height: 48px;
@@ -276,8 +365,8 @@ img {
 
 .app-btn:hover,
 .app-btn:focus {
-  color: var(--white-color);
-  background-color: var(--accent-hover-color);
+  color: var(--white-background);
+  background-color: var(--pressed-state);
 }
 
 /* Examples */
@@ -294,20 +383,20 @@ img {
 .examples-item {
   flex-basis: calc((100% - 2 * 20px) / 3);
 
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
 }
 
 .examples-title {
   font-weight: 500;
   font-size: 20px;
-  color: var(--primary-color);
+  color: var(--dark);
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
 .examples-text {
-  color: var(--secondary-color);
+  color: var(--text);
   margin-bottom: 20px;
 }
