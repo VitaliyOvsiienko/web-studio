@@ -292,21 +292,29 @@ img {
   line-height: 1.1;
   margin-bottom: 72px;
 }
-.div-cust {
+.customers-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
 
-.customers-icon-wrapper {
+.customers-icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 168px;
   height: 88px;
   padding: 16, 32;
-  border: 1px solid tomato;
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+  fill: var(--subtle-text);
+}
+
+.customers-icon-link:hover,
+.customers-icon-link:focus {
+  fill: var(--pressed-state);
+  border-color: var(--pressed-state);
 }
 
 .customers-icon {
