@@ -26,14 +26,25 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item"><a class="nav-link" href="./index.html">Studio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./portfolio.html">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
                     </ul>
                 </nav>
 
+
                 <address class="address">
-                    <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="address-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+                    <div class="address-icon-wrapper">
+                        <svg class="address-icon">
+                            <use href="./images/symbol-defs.svg#icon-envelop"></use>
+                        </svg>
+                        <a class="address-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                    <div class="address-icon-wrapper">
+                        <svg class="address-icon">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        <a class="address-link phone" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+                    </div>
                 </address>
             </div>
         </div>
@@ -42,7 +53,6 @@
     <main>
 
         <section class="section">
-
 
             <div class="container">
                 <h1 class="app-title">
@@ -57,9 +67,16 @@
                 </ul>
 
                 <ul class="examples">
+
                     <li class="examples-item">
                         <a class="examples-link" href="#">
-                            <img src="./images/works/img-1.jpg" alt="Bnking App" width="360" height="300">
+                            <div class="examples-thumb">
+                                <img class="examples-img" src="./images/works/img-1.jpg" alt="Bnking App" width="360"
+                                    height="300">
+                                <p class="text-overlay">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                                    reiciendis accusamus
+                                    commodi tenetur repudiandae veritatis doloremque saepe facere aliquid nesciunt.</p>
+                            </div>
                             <h2 class="examples-title">
                                 Banking App Interface Concept
                             </h2>
@@ -68,9 +85,14 @@
                             </p>
                         </a>
                     </li>
+
                     <li class="examples-item">
                         <a class="examples-link" href="#">
-                            <img src="./images/works/img-2.jpg" alt="QR Code" width="360" height="300">
+                            <div class="examples-thumb">
+                                <img src="./images/works/img-2.jpg" alt="QR Code" width="360" height="300">
+                                <p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                                    excepturi mollitia unde modi vitae delectus quam totam sunt doloribus sapiente.</p>
+                            </div>
                             <h2 class="examples-title">
                                 Cashless Payment
                             </h2>
@@ -79,9 +101,15 @@
                             </p>
                         </a>
                     </li>
+
                     <li class="examples-item">
                         <a class="examples-link" href="#">
-                            <img src="./images/works/img-3.jpg" alt="Laptop" width="360" height="300">
+                            <div class="examples-thumb">
+                                <img src="./images/works/img-3.jpg" alt="Laptop" width="360" height="300">
+                                <p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Sapiente neque et facere minima voluptatibus distinctio nisi error quae molestiae
+                                    consequatur.</p>
+                            </div>
                             <h2 class="examples-title">
                                 Meditation App
                             </h2>
@@ -90,9 +118,15 @@
                             </p>
                         </a>
                     </li>
+
                     <li class="examples-item">
                         <a class="examples-link" href="#">
-                            <img src="./images/works/img-4.jpg" alt="Taxi" width="360" height="300">
+                            <div class="examples-thumb">
+                                <img src="./images/works/img-4.jpg" alt="Taxi" width="360" height="300">
+                                <p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                                    magni voluptates aliquid rerum soluta sed ullam, eaque laudantium necessitatibus
+                                    facere.</p>
+                            </div>
                             <h2 class="examples-title">
                                 Taxi Service
                             </h2>
@@ -101,9 +135,14 @@
                             </p>
                         </a>
                     </li>
+
                     <li class="examples-item">
                         <a class="examples-link" href="#">
-                            <img src="./images/works/img-5.jpg" alt="Mobile wallpapers" width="360" height="300">
+                            <div class="examples-thumb">
+                                <img src="./images/works/img-5.jpg" alt="Mobile wallpapers" width="360" height="300">
+                                <p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                                    facilis excepturi ad est! Eveniet alias ut ipsam adipisci repellendus repellat?</p>
+                            </div>
                             <h2 class="examples-title">
                                 Screen Illustrations
                             </h2>
@@ -112,9 +151,15 @@
                             </p>
                         </a>
                     </li>
+
                     <li class="examples-item">
                         <a class="examples-link" href="#">
-                            <img src="./images/works/img-6.jpg" alt="Woman" width="360" height="300">
+                            <div class="examples-thumb">
+                                <img src="./images/works/img-6.jpg" alt="Woman" width="360" height="300">
+                                <p class="text-overlay">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Voluptates similique aut et illum minima laboriosam. In dignissimos deleniti quod
+                                    commodi.</p>
+                            </div>
                             <h2 class="examples-title">
                                 Online Courses
                             </h2>
@@ -123,9 +168,15 @@
                             </p>
                         </a>
                     </li>
+
                     <li class="examples-item">
                         <a class="examples-link" href="#">
-                            <img src="./images/works/img-7.jpg" alt="Instagram account" width="360" height="300">
+                            <div class="examples-thumb">
+                                <img src="./images/works/img-7.jpg" alt="Instagram account" width="360" height="300">
+                                <p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                                    qui! Accusantium, voluptas accusamus! Mollitia rerum sint cupiditate esse quos
+                                    officia.</p>
+                            </div>
                             <h2 class="examples-title">
                                 Instagram Stories Concept
                             </h2>
@@ -134,9 +185,15 @@
                             </p>
                         </a>
                     </li>
+
                     <li class="examples-item">
                         <a class="examples-link" href="#">
-                            <img src="./images/works/img-8.jpg" alt="Organic Food" width="360" height="300">
+                            <div class="examples-thumb">
+                                <img src="./images/works/img-8.jpg" alt="Organic Food" width="360" height="300">
+                                <p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Necessitatibus minima dolores iste recusandae dicta blanditiis velit rem magnam in
+                                    illo.</p>
+                            </div>
                             <h2 class="examples-title">
                                 Organic Food
                             </h2>
@@ -145,9 +202,15 @@
                             </p>
                         </a>
                     </li>
+
                     <li class="examples-item">
                         <a class="examples-link" href="#">
-                            <img src="./images/works/img-9.jpg" alt="Cup coffee" width="360" height="300">
+                            <div class="examples-thumb">
+                                <img src="./images/works/img-9.jpg" alt="Cup coffee" width="360" height="300">
+                                <p class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Officiis sint totam eos dolores! Quaerat officiis vel numquam iusto maxime commodi.
+                                </p>
+                            </div>
                             <h2 class="examples-title">
                                 Fresh Coffee
                             </h2>
@@ -156,14 +219,9 @@
                             </p>
                         </a>
                     </li>
-
                 </ul>
-
             </div>
         </section>
-
-
-
 
     </main>
 

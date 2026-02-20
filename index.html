@@ -24,15 +24,25 @@
 
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li class="nav-item"><a class="nav-link" href="./index.html">Studio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Studio</a></li>
                         <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
                     </ul>
                 </nav>
 
                 <address class="address">
-                    <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="address-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+                    <div class="address-icon-wrapper">
+                        <svg class="address-icon">
+                            <use href="./images/symbol-defs.svg#icon-envelop"></use>
+                        </svg>
+                        <a class="address-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                    <div class="address-icon-wrapper">
+                        <svg class="address-icon">
+                            <use href="./images/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        <a class="address-link phone" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+                    </div>
                 </address>
             </div>
         </div>
@@ -126,19 +136,24 @@
                 <h2 class="work-title">What are we doing</h2>
 
                 <ul class="work-list">
+
                     <li class="work-item">
                         <img class="work-img" src="./images/advantages/monitor.jpg" alt="computer monitor" width="360"
                             height="300">
+                        <p class="work-text">Lorem ipsum dolor sit amet.</p>
                     </li>
+
 
                     <li class="work-item">
                         <img class="work-img" src="./images/advantages/application.jpg" alt="mobile application"
                             width="360" height="300">
+                        <p class="work-text">Lorem ipsum dolor sit amet.</p>
                     </li>
 
                     <li class="work-item">
                         <img class="work-img" src="./images/advantages/smartphone.jpg" alt="smartphone" width="360"
                             height="300">
+                        <p class="work-text">Lorem ipsum dolor sit amet.</p>
                     </li>
 
                 </ul>
