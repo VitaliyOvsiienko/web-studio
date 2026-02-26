@@ -427,10 +427,11 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: flex-start;
 }
 
 .footer-up {
-  max-width: 264px;
+  max-width: 260px;
 }
 .footer-logo {
   color: var(--primary-brand);
@@ -449,6 +450,7 @@ img {
 
 .footer-media {
   margin-left: 120px;
+  margin-top: 0;
 }
 
 .footer-social {
@@ -458,6 +460,57 @@ img {
 
   margin-bottom: 16px;
   color: var(--white-background);
+}
+
+/* Footer - Subscribe */
+
+.subscribe-form {
+  margin-left: 80px;
+  margin-top: 0;
+}
+.text-subscribe {
+  margin-bottom: 16px;
+  color: var(--white-background);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.subscribe-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.email-subscribe {
+  width: 248px;
+  height: 40px;
+  border: 1px solid var(--white-background);
+  background-color: var(--dark);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.btn-subscribe {
+  width: 158px;
+  height: 40px;
+  margin-left: 24px;
+  background-color: var(--primary-brand);
+  cursor: pointer;
+  color: var(--white-background);
+  padding-left: 0 20px;
+  border-radius: 4px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.icon-subscribe {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: var(--white-background);
 }
 
 /* Portfolio */
