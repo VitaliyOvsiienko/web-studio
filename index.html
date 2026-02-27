@@ -515,9 +515,18 @@
 
 
                 <label class="checkbox-label">
-                    <input type="checkbox" name="privacy" required>
-                    <span class="checkbox-text">I accept the terms and conditions of the <a href="#">Privacy
-                            Policy</a></span>
+                    <input class="real-checkbox" type="checkbox" name="privacy" required />
+
+                    <span class="custom-checkbox">
+                        <svg class="checkbox-icon">
+                            <use href="./images/symbol-defs.svg#icon-checkmark2"></use>
+                        </svg>
+                    </span>
+
+                    <span class="checkbox-text">
+                        I accept the terms and conditions of the
+                        <a href="#">Privacy Policy</a>
+                    </span>
                 </label>
 
                 <button class="modal-btn" type="submit">
