@@ -438,31 +438,93 @@
 
                 <div class="subscribe-wrapper">
                     <label>
-                        <input class="email-subscribe" type="email" name="email" placeholder="email" required />
-                        <button class="btn-subscribe" type="submit">Subscribe
-                            <svg class="icon-subscribe">
-                                <use href="./images/symbol-defs.svg#icon-send"></use>
-                            </svg>
-                        </button>
+                        <input class="email-subscribe" type="email" name="email" placeholder="E-mail" required />
                     </label>
+                    <button class="btn-subscribe" type="submit"><span class="btn-text-subscribe">Subscribe</span>
+                        <svg class="icon-subscribe">
+                            <use href="./images/symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </div>
-
             </form>
+
+
         </div>
 
+        <div class="dev">
+            <p class="dev-text">Depelopment by Vitalii Ovsiienko</p>
+            <ul class="dev-item">
+                <li class="dev-list">
+                    <a class="team-link" target="_blank" href="https://www.linkedin.com/in/vitaly-ovsiyenko/"
+                        rel="noreferrer noopener nofollow">
+                        <svg class="team-icon">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
 
-
-
+                <li class="dev-list">
+                    <a class="team-link" target="_blank" href="https://github.com/VitaliyOvsiienko"
+                        rel="noreferrer noopener nofollow">
+                        <svg class="team-icon">
+                            <use href="./images/symbol-defs.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iste eaque eligendi
-                fugiat eveniet!
-                Excepturi totam, quaerat est asperiores nisi autem! In officia dignissimos dolorum repellendus fuga
-                aliquam, ad suscipit!</p>
-            <button class="modal-button" type="button" data-modal-close>Close</button>
+            <button class="modal-button" type="button" data-modal-close>&times</button>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+
+                <label for="name"><span class="modal-span">Name</span></label>
+                <div class="svg-wrapper">
+                    <input class="modal-input" type="text" id="name" name="name" required>
+                    <svg class="modal-svg">
+                        <use href="./images/symbol-defs.svg#icon-user"></use>
+                    </svg>
+                </div>
+
+                <label for="tel"><span class="modal-span">Phone</span></label>
+                <div class="svg-wrapper">
+                    <input class="modal-input" type="tel" id="tel" name="tel" required>
+                    <svg class="modal-svg">
+                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                </div>
+
+
+                <label for="email"><span class="modal-span">Email</span></label>
+
+                <div class="svg-wrapper">
+                    <input class="modal-input" type="email" id="email" name="email" required>
+                    <svg class="modal-svg">
+                        <use href="./images/symbol-defs.svg#icon-envelop"></use>
+                    </svg>
+                </div>
+
+
+                <label for="comment"><span class="modal-span">Comment</span></label>
+
+                <textarea class="textarea" id="comment" name="comment" rows="4" placeholder="Text input"></textarea>
+
+
+                <label class="checkbox-label">
+                    <input type="checkbox" name="privacy" required>
+                    <span class="checkbox-text">I accept the terms and conditions of the <a href="#">Privacy
+                            Policy</a></span>
+                </label>
+
+                <button class="modal-btn" type="submit">
+                    Send
+                </button>
+            </form>
+
         </div>
     </div>
 

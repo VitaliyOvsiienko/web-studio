@@ -349,12 +349,15 @@ img {
   border-radius: 50%;
   padding: 12px;
 
-  transition: background-color var(--animation);
+  transition:
+    background-color var(--animation),
+    transform 250ms ease;
 }
 
 .team-link:hover,
 .team-link:focus {
   background-color: var(--Success);
+  transform: scale(1.2);
 }
 
 .team-icon {
@@ -422,7 +425,7 @@ img {
 
 .footer {
   background-color: var(--dark);
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .footer-container {
@@ -466,7 +469,6 @@ img {
 
 .subscribe-form {
   margin-left: 80px;
-  margin-top: 0;
 }
 .text-subscribe {
   margin-bottom: 16px;
@@ -483,27 +485,57 @@ img {
 }
 
 .email-subscribe {
-  width: 248px;
+  width: 264px;
   height: 40px;
   border: 1px solid var(--white-background);
+  outline: none;
   background-color: var(--dark);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 16px;
+
+  color: var(--white-background);
+
+  transition: var(--animation);
+}
+
+.email-subscribe::placeholder {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--white-background);
+}
+
+.email-subscribe:hover,
+.email-subscribe:focus {
+  border-color: var(--pressed-state);
 }
 
 .btn-subscribe {
-  width: 158px;
+  width: 165px;
   height: 40px;
   margin-left: 24px;
   background-color: var(--primary-brand);
   cursor: pointer;
   color: var(--white-background);
-  padding-left: 0 20px;
   border-radius: 4px;
   border: none;
-
+  padding-left: 24px;
   display: flex;
   align-items: center;
+
+  transition: var(--animation);
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: var(--pressed-state);
+}
+
+.btn-text-subscribe {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white-background);
 }
 
 .icon-subscribe {
@@ -511,6 +543,24 @@ img {
   height: 24px;
   margin-left: 10px;
   fill: var(--white-background);
+}
+
+.dev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dev-text {
+  color: var(--white-background);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.dev-item {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 /* Portfolio */
@@ -660,8 +710,8 @@ img {
   transform: translate(-50%, -50%);
   opacity: 1;
 
-  min-width: 200px;
-  min-height: 300px;
+  min-width: 408px;
+  min-height: 584px;
   padding: 20px;
   border-radius: 4px;
 
@@ -681,11 +731,13 @@ img {
 }
 
 .modal-button {
-  min-width: 150px;
-  min-height: 50px;
-  padding: 16px 32px;
-  background-color: var(--primary-brand);
-  color: var(--white-background);
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: var(--dark);
+  margin-left: auto;
+  margin-bottom: 24px;
 
   transition:
     color var(--animation),
@@ -703,4 +755,114 @@ img {
 
 .no-scroll {
   overflow: hidden;
+}
+
+/* Modal-Form */
+
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.modal-span {
+  font-size: 12px;
+  line-height: 1.15;
+  color: var(--subtle-text);
+}
+
+.modal-form {
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+}
+
+.svg-wrapper {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.svg-wrapper input {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.modal-input {
+  outline: none;
+  border: 1px solid #2e62f426;
+  transition: var(--animation);
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border: 1px solid var(--primary-brand);
+}
+
+.modal-svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--animation);
+}
+
+.svg-wrapper:focus-within .modal-svg {
+  fill: var(--primary-brand);
+}
+
+.textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding-left: 16px;
+  padding-top: 8px;
+  margin-bottom: 16px;
+}
+
+.textarea::placeholder {
+  color: var(--subtle-text);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.checkbox-text {
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--subtle-text);
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 150px;
+  min-height: 50px;
+  padding: 16px 32px;
+  cursor: pointer;
+  background-color: var(--primary-brand);
+  color: var(--white-background);
+  font-weight: 500;
+  border: none;
+
+  transition:
+    background-color var(--animation),
+    color var(--animation);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--white-background);
+  background-color: var(--pressed-state);
 }
